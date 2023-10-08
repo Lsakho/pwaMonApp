@@ -1,0 +1,14 @@
+<div *ngFor="let p of locationData">
+    {{ p.title }} - {{ p.latitude }} - {{ p.adresse }}
+</div>
+<!-- {{locationData|json}} -->
+  
+
+<div style="height: 500px; width:  auto;"
+     leaflet 
+     [leafletOptions]="options">
+     [leafletLayers]="layers">
+</div>
+
+
+
