@@ -6,6 +6,12 @@
             "adresse": "Av. du Mail 1205 Genève",
             "latitude": 46.19892,
             "longitude": 6.14063,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl": [
                 "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg",
                 "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/1-jeux-plaine-pLOPRENO.jpg",
@@ -21,12 +27,12 @@
             "adresse": "Passage Baud-Bovy 1205 Genève",
             "latitude": 46.19529,
             "longitude": 6.13854,
-            "activite":[{
-                "activite1": "pataugeoire",
-                "activite2": "petanque",
-                "activite3": "sport",
-                "activite4": "espace enfant"
-            }]
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ]
         },
         {
             "id": "3",
@@ -34,6 +40,12 @@
             "adresse": "Quai Ernest Ansermet 1205 Genève",
             "latitude": 46.19658,
             "longitude": 6.13393,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]
@@ -44,6 +56,12 @@
             "adresse": "Rue des Epinettes 1227 Genève",
             "latitude": 46.19044,
             "longitude": 6.13494,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]
@@ -54,6 +72,12 @@
             "adresse": "Rue Simon-Durand",
             "latitude": 46.18988,
             "longitude": 6.13924,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]
@@ -64,6 +88,12 @@
             "adresse": "Quai du Seujet",
             "latitude": 46.20558,
             "longitude": 6.13844,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]
@@ -74,6 +104,12 @@
             "adresse": "Rue Baulacre",
             "latitude": 46.41230,
             "longitude": 6.13782,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]
@@ -84,6 +120,12 @@
             "adresse": "Rue Baulacre",
             "latitude": 46.21465,
             "longitude": 6.13790,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]
@@ -94,6 +136,12 @@
             "adresse": "Rue de Lyon",
             "latitude": 46.20983,
             "longitude": 6.12939,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]
@@ -104,6 +152,12 @@
             "adresse": "Rue des Délices",
             "latitude": 46.20776,
             "longitude": 6.13079,
+            "activite":[
+                 "pataugeoire",
+                 "petanque",
+                 "sport",
+                 "espace enfant"
+            ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
             }]

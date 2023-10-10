@@ -10,6 +10,7 @@ import { latLng, tileLayer, icon, marker, Icon } from 'leaflet';
 })
 export class MapComponentComponent implements OnInit {
   locationData: mapDataInterface[] = [];
+  selectedActivity: string = 'Toutes';
   layers: any[] = []
   options = {
     layers: [
@@ -53,6 +54,15 @@ export class MapComponentComponent implements OnInit {
       );
     }
   }
+
+
+  filterByActivity(event: Event) {
+    const target = event.target as HTMLSelectElement;
+    this.selectedActivity = target.value;
+  }
+
+  
+
 
 
   }
