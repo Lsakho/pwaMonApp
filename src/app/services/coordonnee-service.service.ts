@@ -14,7 +14,7 @@ export class CoordonneeServiceService {
 
   async getlocation(){
     const url =  'assets/data-address.json';
-    const request = this._http.get<mapDataInterface[]>(url);
+    const request = this._http.get<{data: mapDataInterface[]}>(url);
     const response = await firstValueFrom(request);
     return response;
   }

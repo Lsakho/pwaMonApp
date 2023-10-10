@@ -1,12 +1,15 @@
 <div *ngFor="let p of locationData">
-    {{ p.title }} - {{ p.latitude }} - {{ p.adresse }}
+    <div *ngFor="let imgUrl of p.imageUrl">
+        <img [src]="imgUrl" alt="Image">
+    </div>
 </div>
+
+
 <!-- {{locationData|json}} -->
   
-
 <div style="height: 500px; width:  auto;"
      leaflet 
-     [leafletOptions]="options">
+     [leafletOptions]="options"
      [leafletLayers]="layers">
 </div>
 
