@@ -8,7 +8,7 @@ export interface mapDataInterface{
     adresse: string;
     latitude:  string;
     longitude: string;
-    imageUrl:[];
-    activite:[];
+    imageUrl:any[];
+    equipement:any[];
 
 }

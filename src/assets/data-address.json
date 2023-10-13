@@ -6,11 +6,12 @@
             "adresse": "Av. du Mail 1205 Genève",
             "latitude": 46.19892,
             "longitude": 6.14063,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+            "equipement":[
+                 "skatepark",
+                 "place de jeux",
+                 "terrain de petanque",
+                 "table de pique-nique",
+                 "WC"
             ],
             "imageUrl": [
                 "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg",
@@ -27,11 +28,10 @@
             "adresse": "Passage Baud-Bovy 1205 Genève",
             "latitude": 46.19529,
             "longitude": 6.13854,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+            "equipement":[
+                 "place de jeux",
+                 "table de pique-nique",
+                 "WC"
             ]
         },
         {
@@ -40,11 +40,11 @@
             "adresse": "Quai Ernest Ansermet 1205 Genève",
             "latitude": 46.19658,
             "longitude": 6.13393,
-            "activite":[
+            "equipement":[
                  "pataugeoire",
-                 "petanque",
+                 "place de jeux",
                  "sport",
-                 "espace enfant"
+                 "espace de liberter pour chien"
             ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
@@ -56,11 +56,9 @@
             "adresse": "Rue des Epinettes 1227 Genève",
             "latitude": 46.19044,
             "longitude": 6.13494,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+            "equipement":[
+                 "place de jeux",
+                 "table de pique-nique"
             ],
             "imageUrl":[{
                 "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
@@ -72,15 +70,13 @@
             "adresse": "Rue Simon-Durand",
             "latitude": 46.18988,
             "longitude": 6.13924,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+            "equipement":[
+                 "place de jeux",
+                 "table de pique-nique"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                ""
+            ]
         },
         {
             "id": "6",
@@ -88,15 +84,16 @@
             "adresse": "Quai du Seujet",
             "latitude": 46.20558,
             "longitude": 6.13844,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+            "equipement":[
+                 "place de jeux",
+                 "espace de liberter pour chien"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/2020-09/ecole-seujet-ville-geneve-galerie-01.JPG?itok=YAkSSITi",
+                "https://www.geneve.ch/sites/default/files/2020-09/ecole-seujet-ville-geneve-galerie-05.JPG",
+                "https://www.geneve.ch/sites/default/files/2020-09/ecole-seujet-ville-geneve-galerie-03.JPG",
+                "https://www.geneve.ch/sites/default/files/2020-09/ecole-seujet-ville-geneve-galerie-04.jpg"
+            ]
         },
         {
             "id": "7",
@@ -104,15 +101,18 @@
             "adresse": "Rue Baulacre",
             "latitude": 46.41230,
             "longitude": 6.13782,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+            "equipement":[
+                 "place de jeux",
+                 "terrain de petanque",
+                 "WC",
+                 "buvette estivale"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/cropettes-174_7404.jpg?itok=6SM6IG-3",
+                "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/cropettes-174_7403.jpg",
+                "https://www.geneve.ch/sites/default/files/2020-09/parc-cropettes-ville-geneve-galerie-01.jpg",
+                "https://www.geneve.ch/sites/default/files/2022-07/Boulodrome-des-cropettes-2.jpg"
+            ]
         },
         {
             "id": "8",
@@ -120,15 +120,21 @@
             "adresse": "Rue Baulacre",
             "latitude": 46.21465,
             "longitude": 6.13790,
-            "activite":[
+            "equipement":[
                  "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+                 "place de jeux",
+                 "WC",
+                 "verger",
+                 "jardin de fleurs",
+                 "serres et potager urbain",
+                 "buvette estivale"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/2019_vdg_jeux_beaulieu_01.jpg?itok=4Vs--MZ9",
+                "https://www.geneve.ch/sites/default/files/2020-09/parc-beaulieu-ville-geneve-galerie-03.jpg",
+                "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/2019_vdg_jeux_beaulieu_02.jpg",
+                "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/2019_vdg_jeux_beaulieu_05.jpg"
+            ]
         },
         {
             "id": "9",
@@ -136,15 +142,20 @@
             "adresse": "Rue de Lyon",
             "latitude": 46.20983,
             "longitude": 6.12939,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
+            "equipement":[
+                 "place de jeux",
+                 "espace de liberter pour chien",
                  "sport",
-                 "espace enfant"
+                 "street workout",
+                 "buvette estivale"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/2022-07/2022_place-jeux-geisendorf-03.jpg?itok=4om0sR6h",
+                "https://www.geneve.ch/sites/default/files/2022-07/2022_place-jeux-geisendorf-03.jpg",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/2022-07/2022_place-jeux-geisendorf-01.jpg?itok=1qEjkKPw",
+                "https://www.geneve.ch/sites/default/files/2022-07/2022_place-jeux-geisendorf-07.jpg",
+                "https://www.geneve.ch/sites/default/files/2022-07/2022_place-jeux-geisendorf-04.jpg"
+            ]
         },
         {
             "id": "10",
@@ -152,15 +163,16 @@
             "adresse": "Rue des Délices",
             "latitude": 46.20776,
             "longitude": 6.13079,
-            "activite":[
-                 "pataugeoire",
-                 "petanque",
-                 "sport",
-                 "espace enfant"
+            "equipement":[
+                 "place de jeux"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-bac-sable-ville-geneve.jpg?itok=xeSi3Tn-",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-chevaux-ville-geneve.jpg?itok=Kv5C0FZp",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-structure-bois-ville-geneve.jpg?itok=yN_fZMGz",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-vue-ensemble-ville-geneve.jpg?itok=z7_dto34"
+
+            ]
         }
     ]
 }

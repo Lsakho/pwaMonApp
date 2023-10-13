@@ -4,25 +4,34 @@
   
     <option value="Toutes">Toutes</option>
     <option value="pataugeoire">Pataugeoire</option>
-    <option value="petanque">Pétanque</option>
+    <option value="terrain de petanque">Pétanque</option>
     <option value="sport">Sport</option>
-    <option value="espace enfant">Espace enfant</option>
+    <option value="place de  jeux">Espace enfant</option>
+    <option value="WC">Toilette</option>
+    <option value="skatepark">Skatepark</option>
+    <option value="table de pique-nique">Table de pique-nique</option>
+    <option value="verger">verger</option>
+    <option value="espace de liberter pour chien">Espace chien</option>
+    <option value="buvette estivale">buvette-Cantine(été)</option>
+    <option value="jardin de fleurs">Jardin de fleurs</option>
+    <option value="Serres et potager urbain">Serres et potager urbain</option>
+
 </select>
   
   <!-- Affichage des emplacements filtrés par activité -->
-  <div *ngFor="let location of locationData | activityFilter:selectedActivity">
+  <div *ngFor="let location of locationData$|async ">
     <div *ngFor="let imgUrl of location.imageUrl">
       <img [src]="imgUrl" alt="Image">
     </div>
-    <div *ngFor="let activite of location.activite">
+    <div *ngFor="let activite of location.equipement">
       {{ activite }}
     </div>
   </div>
-  
+  <!-- {{selectedActivity$.asObservable()|async}} -->
   <!-- Carte Leaflet -->
-  <div style="height: 500px; width: auto;"
+  <div *ngIf="(layers$|async) as layerReady" style="height: 500px; width: auto;"
     leaflet
     [leafletOptions]="options"
-    [leafletLayers]="layers">
+    [leafletLayers]="layerReady">
   </div>
   
