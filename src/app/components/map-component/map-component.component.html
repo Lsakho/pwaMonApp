@@ -1,5 +1,39 @@
+<ion-header translucent="">
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-toolbar>
+  <ion-buttons  [(ngModel)]="selectedActivity" (click)="filterByActivity($event)" >
+    <ion-button option value="sport">Sport</ion-button>
+    <!-- <ion-button (click)="filterByActivity('pataugeoire')">Pataugeoire</ion-button> -->
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-select [(ngModel)]="selectedActivity" (ionChange)="filterByActivity($event)">
+      <ion-select-option value="Toutes">Toutes</ion-select-option>
+      <ion-select-option value="pataugeoire">Pataugeoire</ion-select-option>
+      <ion-select-option value="terrain de petanque">Pétanque</ion-select-option>
+      <ion-select-option value="sport">Sport</ion-select-option>
+      <ion-select-option value="place de jeux">Espace enfant</ion-select-option>
+      <ion-select-option value="WC">Toilette</ion-select-option>
+      <ion-select-option value="skatepark">Skatepark</ion-select-option>
+      <ion-select-option value="table de pique-nique">Table de pique-nique</ion-select-option>
+      <ion-select-option value="verger">Verger</ion-select-option>
+      <ion-select-option value="espace de liberter pour chien">Espace chien</ion-select-option>
+      <ion-select-option value="buvette estivale">Buvette-Cantine (été)</ion-select-option>
+      <ion-select-option value="jardin de fleurs">Jardin de fleurs</ion-select-option>
+      <ion-select-option value="Serres et potager urbain">Serres et potager urbain</ion-select-option>
+      <ion-button value="table de pique-nique">verger</ion-button>
+    </ion-select>
+  </ion-buttons>
+</ion-toolbar>
 <!-- Menu déroulant pour sélectionner l'activité -->
-<select [(ngModel)]="selectedActivity" (change)="filterByActivity($event)">
+<!-- <select [(ngModel)]="selectedActivity" (change)="filterByActivity($event)">
 
   
     <option value="Toutes">Toutes</option>
@@ -18,20 +52,21 @@
 
 </select>
   
-  <!-- Affichage des emplacements filtrés par activité -->
-  <div *ngFor="let location of locationData$|async ">
+  Affichage des emplacements filtrés par activité -->
+  <!-- <div *ngFor="let location of locationData$|async ">
     <div *ngFor="let imgUrl of location.imageUrl">
       <img [src]="imgUrl" alt="Image">
     </div>
     <div *ngFor="let activite of location.equipement">
       {{ activite }}
     </div>
-  </div>
+  </div> --> 
   <!-- {{selectedActivity$.asObservable()|async}} -->
   <!-- Carte Leaflet -->
-  <div *ngIf="(layers$|async) as layerReady" style="height: 500px; width: auto;"
+  <div *ngIf="(layers$|async) as layerReady" style="height: 600px; width: auto;"
+  
     leaflet
     [leafletOptions]="options"
-    [leafletLayers]="layerReady">
+    [leafletLayers]="layerReady" (click)="openModal()">
   </div>
   

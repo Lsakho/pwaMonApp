@@ -4,6 +4,8 @@ import { mapDataInterface, mapInterface } from 'src/app/DatasInterface';
 import { latLng, tileLayer, icon, marker, Icon, Marker } from 'leaflet';
 import { ActivityFilterPipe } from '../../pipe/activity-filter.pipe'
 import { BehaviorSubject , Observable, map, combineLatest} from 'rxjs';
+import { ModalController } from '@ionic/angular';
+import { ModalComponentComponent } from '../modal/modal-component/modal-component.component';
 
 @Component({
   selector: 'app-map-component',
@@ -60,7 +62,8 @@ export class MapComponentComponent implements OnInit {
 
 
   constructor(
-    private readonly _coordonneService: CoordonneeServiceService
+    private readonly _coordonneService: CoordonneeServiceService,
+    private readonly modalCtrl: ModalController
   ) { }
   async ngOnInit() {
    this.getposition()
@@ -81,17 +84,21 @@ export class MapComponentComponent implements OnInit {
       // console.log("Latitude:", latitude);
       // console.log("Longitude:", longitude);
   
-      // Ajoutez chaque marqueur au tableau des couches
-      this.layers.push(
-        marker([latitude, longitude], {
-          icon: icon({
-            ...Icon.Default.prototype.options,
-            iconUrl: 'assets/marker-icon.png',
-            iconRetinaUrl: 'assets/marker-icon-2x.png',
-            shadowUrl: 'assets/marker-shadow.png'
-          })
+
+      const customMarker = marker([latitude, longitude], {
+        icon: icon({
+          ...Icon.Default.prototype.options,
+          iconUrl: 'assets/marker-icon.png',
+          iconRetinaUrl: 'assets/marker-icon-2x.png',
+          shadowUrl: 'assets/marker-shadow.png'
         })
-      );
+      });
+
+      customMarker.addEventListener('click', () => {
+        this.openModal();
+      });
+
+      this.layers.push(customMarker);
     }
   }
 
@@ -100,6 +107,14 @@ export class MapComponentComponent implements OnInit {
     const target = event.target as HTMLSelectElement;
     this.selectedActivity = target.value;
     this.selectedActivity$.next(target.value);
+  }
+
+  async openModal() {
+    const modal = await this.modalCtrl.create({
+      component: ModalComponentComponent,
+  
+    });
+    return await modal.present();
   }
 
   

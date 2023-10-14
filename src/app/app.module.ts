@@ -8,12 +8,15 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ActivityFilterPipe } from './pipe/activity-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
+import { ModalComponentComponent } from './components/modal/modal-component/modal-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponentComponent,
-    ActivityFilterPipe
+    ActivityFilterPipe,
+    ModalComponentComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     HttpClientModule,
     FormsModule,
-    LeafletModule
+    LeafletModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
