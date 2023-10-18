@@ -164,13 +164,37 @@
             "latitude": 46.20776,
             "longitude": 6.13079,
             "equipement":[
-                 "place de jeux"
+                 "place de jeux",
+                 "table de ping-pong",
+                 "toboggan",
+                 "jeux d'echec",
+                 "bac a sable ",
+                 "pont de corde",
+                 "WC"
             ],
             "imageUrl":[
                 "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-bac-sable-ville-geneve.jpg?itok=xeSi3Tn-",
                 "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-chevaux-ville-geneve.jpg?itok=Kv5C0FZp",
                 "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-structure-bois-ville-geneve.jpg?itok=yN_fZMGz",
                 "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-vue-ensemble-ville-geneve.jpg?itok=z7_dto34"
+
+            ]
+        },
+
+        {
+            "id": "11",
+            "title": "Parc des bastions",
+            "adresse": "place neuve",
+            "latitude":  46.20054,
+            "longitude": 6.14442,
+            "equipement":[
+                 "place de jeux"
+            ],
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/themes_et_demarches/petite_enfance/place-jeux-bastions-geneve-1.jpg?itok=BDXPrr5N",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/themes_et_demarches/petite_enfance/place-jeux-bastions-geneve-3.jpg?itok=ctijgRGh",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/themes_et_demarches/petite_enfance/place-jeux-bastions-geneve-2.jpg?itok=NlRp5kSt",
+                "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-bastions-echecs-ville-geneve.jpg"
 
             ]
         }

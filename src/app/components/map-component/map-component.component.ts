@@ -17,6 +17,8 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
   locationData: mapDataInterface[] = [];
   selectedActivity: string = 'Toutes';
   displayMap = false; // for the display map
+  showMore: boolean = false; // for the buttons
+
   
   selectedActivity$: BehaviorSubject<string> = new BehaviorSubject('Toutes');
   private _locationData$: BehaviorSubject<mapDataInterface[]> = new BehaviorSubject([] as mapDataInterface[])
@@ -126,9 +128,9 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
           iconRetinaUrl: 'assets/marker-icon-2x.png',
           shadowUrl: 'assets/marker-shadow.png'
         })
-      });
-  
-      customMarker.addEventListener('click', () => {
+      }).on('click', () => {
+        console.log('im there');
+        
         this.openModal();
       });
       
@@ -161,7 +163,15 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
     const searchTerm = event.detail.value;
     this._locationData$.next(new TitleFilterPipe().transform(this.locationData, searchTerm));
   }
+  showMoreActivities() {
+    this.showMore = true;
+  }
 
+  toggleActivities(event: any) {
+    if (event.detail.value === 'activities') {
+      this.showMore = false;
+    }
+  }
 }
 
 
