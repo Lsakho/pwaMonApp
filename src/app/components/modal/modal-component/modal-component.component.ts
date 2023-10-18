@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, NavParams } from '@ionic/angular'; // Importez NavParams
+import { mapDataInterface } from 'src/app/DatasInterface';
 
 @Component({
   selector: 'app-modal-component',
@@ -7,7 +8,12 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./modal-component.component.scss']
 })
 export class ModalComponentComponent {
+  locationData: mapDataInterface; 
+
   constructor(
-    public readonly modalCtrl: ModalController
-  ){}
+    public readonly modalCtrl: ModalController,
+    public readonly navParams: NavParams // Injectez NavParams
+  ) {
+    this.locationData = this.navParams.get('locationData'); // Récupérez les données depuis NavParams
+  }
 }

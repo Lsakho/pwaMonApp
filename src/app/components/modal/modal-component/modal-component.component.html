@@ -1,3 +1,25 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Détails du lieu
+    </ion-title>
+    <div *ngFor="let location of locationData$|async ">
+      <div *ngFor="let imgUrl of location.imageUrl">
+        <img [src]="imgUrl" alt="Image">
+      </div>
+      <div *ngFor="let activite of location.equipement">
+        {{ activite }}
+      </div>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button (click)="modalCtrl.dismiss()">
+        Fermer
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+
 <ion-header>
   <ion-toolbar>
     <ion-title>
@@ -10,4 +32,9 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+<ion-content>
+  <h2>{{ locationData.adresse }}</h2>
+  <p>{{ locationData.title }}</p>
+</ion-content>
 

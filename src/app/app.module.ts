@@ -10,6 +10,7 @@ import { ActivityFilterPipe } from './pipe/activity-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { ModalComponentComponent } from './components/modal/modal-component/modal-component.component';
+import { TitleFilterPipe } from './pipe/title-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ModalComponentComponent } from './components/modal/modal-component/moda
     MapComponentComponent,
     ActivityFilterPipe,
     ModalComponentComponent,
+    TitleFilterPipe,
   ],
   imports: [
     BrowserModule,
