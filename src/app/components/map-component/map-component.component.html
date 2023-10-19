@@ -43,7 +43,7 @@
       </ion-segment-button>
     </ion-segment>
 
-    <ion-segment *ngIf="showMore" value="activities-2" (ionChange)="toggleActivities($event)">
+    <ion-segment class="button" *ngIf="showMore" value="activities-2" (ionChange)="toggleActivities($event)">
       <ion-segment-button fill="clear" option value="espace de liberter pour chien"
         (click)="selectedActivity$.next('espace de liberter pour chien')">Espace chien <svg
           xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
