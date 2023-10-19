@@ -1,7 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { CoordonneeServiceService } from 'src/app/services/coordonnee-service.service';
 import { mapDataInterface, mapInterface } from 'src/app/DatasInterface';
-import { latLng, tileLayer, icon, marker, Icon, Marker } from 'leaflet';
+import { latLng, tileLayer, icon, marker, Icon, Marker} from 'leaflet';
+import * as L from 'leaflet';
 import { ActivityFilterPipe } from '../../pipe/activity-filter.pipe'
 import { BehaviorSubject , Observable, map, combineLatest, firstValueFrom} from 'rxjs';
 import { ModalController } from '@ionic/angular';
@@ -18,6 +19,7 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
   selectedActivity: string = 'Toutes';
   displayMap = false; // for the display map
   showMore: boolean = false; // for the buttons
+
 
   
   selectedActivity$: BehaviorSubject<string> = new BehaviorSubject('Toutes');
@@ -82,7 +84,7 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(()=>{
      this.displayMap = true;
-    }, 1100)
+    }, 1250)
     
   }
   async getposition() {
@@ -173,22 +175,62 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
       this.showMore = false;
     }
   }
-   async searchMarker($event: any){
-    const { lat, lng }= $event.latlng
-    const markers = await firstValueFrom(this.layers$) 
+  async searchMarker($event: any) {
+    const { lat, lng } = $event.latlng;
+    const markers: L.Marker[] = await firstValueFrom(this.layers$);
+  
+    // Initialisez des variables pour suivre le marqueur le plus proche
+    let closestMarker : any;
+    let closestDistance = Number.POSITIVE_INFINITY;
+  
+    // Parcourez chaque marqueur et calculez la distance
+    markers.forEach((marker: L.Marker) => {
+      const position = marker.getLatLng();
+      const distance = this.getDistance(lat, lng, position.lat, position.lng);
+  
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestMarker = marker;
+      }
+    });
+  
+    // Vérifiez si un marqueur a été trouvé
+    if (closestMarker && closestMarker instanceof L.Marker) {
+      const options = closestMarker.options;
+      if (options && options.title) {
     
-    const marker = markers.find(marker=> {
-      const position = marker.getLatLng()
-      return position.lat.toFixed(2) === lat.toFixed(2) && position.lng.toFixed(2) === lng.toFixed(2)
-    })
-    const locations = await firstValueFrom( this.locationData$);
-    const location = locations.find(l=> l.title === marker?.options.title)
-    console.log(location);
-    if (!location) {
-      return;
+        const location = await this.getLocationDataByTitle(options.title);
+  
+        if (location) {
+          this.openModal(location);
+        }
+      }
     }
-    this.openModal(location)
   }
+  
+  
+  getDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+    // Utilisez la formule Haversine pour calculer la distance entre deux points géographiques
+    const R = 6371; // Rayon de la Terre en km
+    const dLat = this.deg2rad(lat2 - lat1);
+    const dLon = this.deg2rad(lon2 - lon1);
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(this.deg2rad(lat1)) * Math.cos(this.deg2rad(lat2)) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  }
+  
+  deg2rad(deg: number): number {
+    return deg * (Math.PI / 180);
+  }
+  
+  async getLocationDataByTitle(title: string) {
+    const locations = await firstValueFrom(this.locationData$);
+    return locations.find((location) => location.title === title);
+  }
+  
 }
 
 
