@@ -84,7 +84,7 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(()=>{
      this.displayMap = true;
-    }, 1250)
+    }, 1500)
     
   }
   async getposition() {
@@ -211,7 +211,7 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
   
   getDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
     // Utilisez la formule Haversine pour calculer la distance entre deux points géographiques
-    const R = 6371; // Rayon de la Terre en km
+    const R = 6371; 
     const dLat = this.deg2rad(lat2 - lat1);
     const dLon = this.deg2rad(lon2 - lon1);
     const a =

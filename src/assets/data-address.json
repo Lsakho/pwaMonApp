@@ -32,6 +32,12 @@
                  "place de jeux",
                  "table de pique-nique",
                  "WC"
+            ],
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/2021-02/parc-baud-bovy-ville-geneve-cover.jpg",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Parc__jardins__plages_et_bains_publics/Parcs_et_squares/BAUD-BOVY_SACCONI_009553.jpg?itok=HDRl1neX",
+                "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Parc__jardins__plages_et_bains_publics/Parcs_et_squares/baud-bovy1-seve.jpg",
+                "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Parc__jardins__plages_et_bains_publics/Parcs_et_squares/BAUD-BOVY_SACCONI_009553.jpg"
             ]
         },
         {
@@ -46,9 +52,10 @@
                  "sport",
                  "espace de liberter pour chien"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/2021-07/quai-ernest-ansermet-ville-geneve.jpg"
+
+            ]
         },
         {
             "id": "4",
@@ -58,11 +65,20 @@
             "longitude": 6.13494,
             "equipement":[
                  "place de jeux",
-                 "table de pique-nique"
+                 "table de pique-nique",
+                 "terrain de petanque",
+                 "table de ping-pong",
+                 "sport",
+                 "street workout",
+                 "bac a sable ",
+                 "WC"
             ],
-            "imageUrl":[{
-                "img": "src= 'https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-plaine-plainpalais-structure-bois-ville-geneve.jpg' "
-            }]
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/2022-12/2022_parc-acacias_01.jpg?itok=k2qjF49H",
+                "https://www.geneve.ch/sites/default/files/2020-09/parc-acacias-ville-geneve-galerie-02.JPG",
+                "https://www.geneve.ch/sites/default/files/2022-12/2022_parc-acacias_03.jpg",
+                "https://www.geneve.ch/sites/default/files/2021-01/place-jeux-parc-acacias-ville-geneve-galerie.jpg"
+            ]
         },
         {
             "id": "5",
@@ -75,7 +91,10 @@
                  "table de pique-nique"
             ],
             "imageUrl":[
-                ""
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/2020-09/square-simon-durand-ville-geneve-galerie-01.JPG?itok=xdqZ8D5k",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/2020-09/square-simon-durand-ville-geneve-galerie-03.JPG?itok=hx4jIHck",
+                "https://www.geneve.ch/sites/default/files/2020-09/square-simon-durand-ville-geneve-galerie-05.JPG",
+                "https://www.geneve.ch/sites/default/files/2020-09/square-simon-durand-ville-geneve-galerie-07.JPG"
             ]
         },
         {
@@ -164,13 +183,8 @@
             "latitude": 46.20776,
             "longitude": 6.13079,
             "equipement":[
-                 "place de jeux",
-                 "table de ping-pong",
-                 "toboggan",
-                 "jeux d'echec",
-                 "bac a sable ",
-                 "pont de corde",
-                 "WC"
+                 "place de jeux"
+                 
             ],
             "imageUrl":[
                 "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-parc-delices-bac-sable-ville-geneve.jpg?itok=xeSi3Tn-",
@@ -188,7 +202,13 @@
             "latitude":  46.20054,
             "longitude": 6.14442,
             "equipement":[
-                 "place de jeux"
+                 "place de jeux",
+                 "table de ping-pong",
+                 "toboggan",
+                 "jeux d'echec",
+                 "bac a sable ",
+                 "pont de corde",
+                 "WC"
             ],
             "imageUrl":[
                 "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/themes_et_demarches/petite_enfance/place-jeux-bastions-geneve-1.jpg?itok=BDXPrr5N",
