@@ -1,29 +1,30 @@
 :host{
-    .transparent-toolbar {
-        background-image: url('../../../assets/Img1.JPG');
-        background-size: cover;
-    }
-    page-name {
-        .segment-ios {
-          display: flex;
-          flex-direction: row;
-          overflow-x: auto;
-          white-space: nowrap;
-          gap: 5px;
+    
+    // .transparent-toolbar {
+    //     background-image: url('../../../assets/Img1.JPG');
+    //     background-size: cover;
+    // }
+    // page-name {
+    //     .segment-ios {
+    //       display: flex;
+    //       flex-direction: row;
+    //       overflow-x: auto;
+    //       white-space: nowrap;
+    //       gap: 5px;
           
-          // Cacher les segments excédentaires
-          ion-segment-button:nth-child(n + 5) {
-            display: none;
-          }
-        }
+    //       // Cacher les segments excédentaires
+    //       ion-segment-button:nth-child(n + 5) {
+    //         display: none;
+    //       }
+    //     }
         
-        // Afficher les boutons supplémentaires
-        &.show-more {
-          .segment-ios ion-segment-button {
-            display: inline-block;
-          }
-        }
-      }
+    //     // Afficher les boutons supplémentaires
+    //     &.show-more {
+    //       .segment-ios ion-segment-button {
+    //         display: inline-block;
+    //       }
+    //     }
+    //   }
       
     
 }

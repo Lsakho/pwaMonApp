@@ -3,7 +3,7 @@ import { CoordonneeServiceService } from 'src/app/services/coordonnee-service.se
 import { mapDataInterface, mapInterface } from 'src/app/DatasInterface';
 import { latLng, tileLayer, icon, marker, Icon, Marker } from 'leaflet';
 import { ActivityFilterPipe } from '../../pipe/activity-filter.pipe'
-import { BehaviorSubject , Observable, map, combineLatest} from 'rxjs';
+import { BehaviorSubject , Observable, map, combineLatest, firstValueFrom} from 'rxjs';
 import { ModalController } from '@ionic/angular';
 import { ModalComponentComponent } from '../modal/modal-component/modal-component.component';
 import { TitleFilterPipe } from 'src/app/pipe/title-filter.pipe';
@@ -51,7 +51,8 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
               iconUrl: 'assets/marker-icon.png',
               iconRetinaUrl: 'assets/marker-icon-2x.png',
               shadowUrl: 'assets/marker-shadow.png'
-            })
+            }),
+            title: data.title
           })
         );
       }
@@ -114,31 +115,31 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
 
     //   this.layers.push(customMarker);
     // }
-    this.updateMarkers();
+    // this.updateMarkers();
   }
-  updateMarkers() {
-    this.layers = [];
-    for (const data of this.locationData) {
-      const latitude = parseFloat(data.latitude);
-      const longitude = parseFloat(data.longitude);
-      const customMarker = marker([latitude, longitude], {
-        icon: icon({
-          ...Icon.Default.prototype.options,
-          iconUrl: 'assets/marker-icon.png',
-          iconRetinaUrl: 'assets/marker-icon-2x.png',
-          shadowUrl: 'assets/marker-shadow.png'
-        })
-      }).on('click', () => {
-        console.log('im there');
+  // updateMarkers() {
+  //   this.layers = [];
+  //   for (const data of this.locationData) {
+  //     const latitude = parseFloat(data.latitude);
+  //     const longitude = parseFloat(data.longitude);
+  //     const customMarker = marker([latitude, longitude], {
+  //       icon: icon({
+  //         ...Icon.Default.prototype.options,
+  //         iconUrl: 'assets/marker-icon.png',
+  //         iconRetinaUrl: 'assets/marker-icon-2x.png',
+  //         shadowUrl: 'assets/marker-shadow.png'
+  //       })
+  //     }).on('click', () => {
+  //       console.log('im there');
         
-        this.openModal();
-      });
+  //       this.openModal();
+  //     });
       
   
-      this.layers.push(customMarker);
+  //     this.layers.push(customMarker);
   
-    }
-  }
+  //   }
+  // }
   
 
 
@@ -148,11 +149,11 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
     this.selectedActivity$.next(target.value);
   }
 
-  async openModal() {
+  async openModal(location: mapDataInterface) {
     const modal = await this.modalCtrl.create({
       component: ModalComponentComponent,
       componentProps: {
-        locationData: this.locationData
+        locationData: location
       }
   
     });
@@ -171,6 +172,22 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
     if (event.detail.value === 'activities') {
       this.showMore = false;
     }
+  }
+   async searchMarker($event: any){
+    const { lat, lng }= $event.latlng
+    const markers = await firstValueFrom(this.layers$) 
+    
+    const marker = markers.find(marker=> {
+      const position = marker.getLatLng()
+      return position.lat.toFixed(2) === lat.toFixed(2) && position.lng.toFixed(2) === lng.toFixed(2)
+    })
+    const locations = await firstValueFrom( this.locationData$);
+    const location = locations.find(l=> l.title === marker?.options.title)
+    console.log(location);
+    if (!location) {
+      return;
+    }
+    this.openModal(location)
   }
 }
 

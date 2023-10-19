@@ -1,11 +1,10 @@
 <ion-content>
-  <ion-header class="transparent-toolbar">
-
+  <div class="header">
     <ion-searchbar (ionChange)="filterByTitle($event)"></ion-searchbar>
 
 
     <!-- <ion-toolbar> -->
-    <ion-segment value="activities" (ionChange)="toggleActivities($event)">
+    <ion-segment class="button" value="activities" (ionChange)="toggleActivities($event)">
       <ion-segment-button fill="clear" option value="Toutes"
         (click)="selectedActivity$.next('Toutes')">Toutes</ion-segment-button>
       <ion-segment-button fill="clear" option value="palce de jeux"
@@ -76,12 +75,13 @@
     </ion-segment>
 
     <ion-button fill="clear" (click)="showMoreActivities()">Voir plus</ion-button>
-  </ion-header>
-  <div *ngIf="displayMap">
+  </div>
+  <div id="mapelement" *ngIf="displayMap">
 
-    <div *ngIf="(layers$|async) as layerReady" style="height: 600px; width: auto;" leaflet [leafletOptions]="options">
+    <div *ngIf="(layers$|async) as layerReady" style="height: 100vh; width: auto;" leaflet [leafletOptions]="options"
+      (leafletClick)="searchMarker($event)">
 
-      <div *ngFor="let l of layerReady" [leafletLayer]="l " (click)="openModal()"></div>
+      <div *ngFor="let l of layerReady" [leafletLayer]="l"></div>
     </div>
   </div>
 

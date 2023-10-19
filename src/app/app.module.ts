@@ -27,7 +27,9 @@ import { TitleFilterPipe } from './pipe/title-filter.pipe';
     HttpClientModule,
     FormsModule,
     LeafletModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot({
+      mode: 'ios'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
