@@ -33,8 +33,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <h2>{{ locationData.adresse }}</h2>
-  <p>{{ locationData.title }}</p>
+<ion-content class="modal-content">
+  <h1>{{ locationData.title }}</h1>
+  <h3>{{locationData.adresse}}</h3>
+
+  <h2 class="section-heading">Equipement</h2>
+  <ion-list *ngFor="let equipement of locationData.equipement" class="equipment-list">
+    <ion-item class="equipment-item">{{ equipement }}</ion-item>
+  </ion-list>
+
+  <h2 class="section-heading">Photos</h2>
+  <ion-list *ngFor="let img of locationData.imageUrl" class="image-list">
+    <ion-item class="image-item">
+      <ion-img class="modal-image" [src]="img"></ion-img>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
 
