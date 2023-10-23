@@ -217,6 +217,33 @@
                 "https://www.geneve.ch/sites/default/files/fileadmin/public/images/Lieux/Loisirs_et_jeux/Places_de_jeux_autres/place-jeux-bastions-echecs-ville-geneve.jpg"
 
             ]
+        },
+        {
+            "id": "12",
+            "title": "Chateaubriand",
+            "adresse": "Rue de Chateaubriad",
+            "latitude":  46.21577,
+            "longitude": 6.15115,
+            "equipement":[
+                 "place de jeux",
+                 "table de ping-pong",
+                 "terrain de petanque",
+                 "terrain de sport",
+                 "bac a sable ",
+                 "basket",
+                 "street workout",
+                 "fitness urbain",
+                 "sport",
+                 "skatepark"
+            ],
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/2022-07/2022_place-jeux-chateaubriand-01.jpg",
+                "https://www.geneve.ch/sites/default/files/2022-07/2022_place-jeux-chateaubriand-02.jpg",
+                "https://www.geneve.ch/sites/default/files/2022-07/2022_place-jeux-chateaubriand-03.jpg",
+                "https://www.geneve.ch/sites/default/files/2022-07/2022_place-jeux-chateaubriand-04.jpg",
+                "https://www.geneve.ch/sites/default/files/styles/raw/public/2023-03/skatepark-chateaubriand-geneve-contenu.jpg?itok=CkpzweLI"
+
+            ]
         }
     ]
 }

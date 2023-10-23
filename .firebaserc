@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ouonvaa": {
+      "hosting": {
+        "pwaMonApp": [
+          "ouonvaa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ouonvaa"
+  }
+}

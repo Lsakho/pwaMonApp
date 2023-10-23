@@ -84,7 +84,7 @@ export class MapComponentComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(()=>{
      this.displayMap = true;
-    }, 1500)
+    }, 200)
     
   }
   async getposition() {

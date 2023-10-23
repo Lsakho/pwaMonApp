@@ -219,6 +219,13 @@
               "browserTarget": "pwaMonApp:build:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "pwaMonApp:build:production"
+          }
         }
       }
     }
