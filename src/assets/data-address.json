@@ -244,6 +244,49 @@
                 "https://www.geneve.ch/sites/default/files/styles/raw/public/2023-03/skatepark-chateaubriand-geneve-contenu.jpg?itok=CkpzweLI"
 
             ]
+        },
+            {
+            "id": "13",
+            "title": "Skatepark des Cherpines",
+            "adresse": "Chemin du Pont du Centenaire 1228 Plan-Les-Ouates",
+            "latitude":  46.17290,
+            "longitude": 6.10499,
+            "equipement":[
+                 "skatepark"
+            ],
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Sports/Skate_parcs/1-cherpins.jpg?itok=0DYVspwH",
+                "https://www.geneve.ch/sites/default/files/styles/1_48_161x109/public/fileadmin/public/images/Lieux/Sports/Skate_parcs/2-cherpins.jpg?itok=4pxVTpmX"
+
+            ]
+        },
+        {
+            "id": "14",
+            "title": "Parc La Grange",
+            "adresse": "Quai Gustave-Ador",
+            "latitude":  46.20591,
+            "longitude": 6.16733,
+            "equipement":[
+                 "place de jeux",
+                 "jardin de roses",
+                 "théatre de verdure (scéne Ella Fitzgerald)",
+                 "pataugeoire",
+                 "espace de liberter pour chien",
+                 "Guinguette du parc la Grange",
+                 "espace de grillade estivale",
+                 "WC"
+                 
+            ],
+            "imageUrl":[
+                "https://www.geneve.ch/sites/default/files/2020-05/parc-la-grange.jpg",
+                "https://www.geneve.ch/sites/default/files/2022-01/roseraie-la-grange-ville-geneve-cover.jpg",
+                "https://www.geneve.ch/sites/default/files/2023-03/guinguette-lagrange-cover-geneve.jpg",
+                "https://www.geneve.ch/sites/default/files/2021-07/pataugeoire-lagrange-cover.jpg",
+                "https://www.geneve.ch/sites/default/files/2021-12/jeux-parc-lagrange-ville-geneve-galerie_04.jpg",
+                "https://www.geneve.ch/sites/default/files/2021-12/jeux-parc-lagrange-ville-geneve-galerie_03.jpg",
+                "https://www.geneve.ch/sites/default/files/2022-08/2022_place-jeux-la-grange-02.jpg"
+
+            ]
         }
     ]
 }
